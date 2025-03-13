@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+    <listeners>
+        <listener class-name="Utils.reports" />
+    </listeners>
+
+    <groups>
+        <run>
+            <include name="e" />
+        </run>
+    </groups>
+
+    <test name="Examples">
+        <classes>
+            <class name="PageTests.LoginTests" />
+        </classes>
+    </test>
+
+</suite>
